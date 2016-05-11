@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'stormpath-rails', '~> 1.1.2.beta'
+
 gem 'rails_12factor', group: :production
 
 group :development, :test do
