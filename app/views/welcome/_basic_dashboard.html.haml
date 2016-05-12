@@ -1,0 +1,10 @@
+- if token = current_user.configs and current_user.configs['stripe_token']
+  You're ready to Ryde! 
+  <br />
+  <br />
+  Payment Method: 
+  <br />
+  #{@stripe_source.brand} ending in #{@stripe_source.last4}
+- else
+  %h3 You know the deal. Add a payment method to start ryding. 
+  = render partial: 'new_payment_method'
